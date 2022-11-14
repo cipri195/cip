@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Rekord Autoak - Registro</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="Logo/favicon2.jpg">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+ 
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="CSS/estilos.css">
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Custom Scripts -->
+        
+    </head>
+    
+    <body id="pag-cuenta">
+        
+        <header id="cabecera">
+            
+            <!-- Logo empresa -->
+            <figure id="logo-empresa">
+                <img src="Logo/Favicon.jpg" alt="LOGO">
+            </figure>
+            
+            <!-- Botón inicio sesión -->
+            <div id="inicio-sesion"><p><a href="registro.html"><i class="fas fa-user"></i>Registrarse</a></p><p><a href="Cuenta.html"><i class="fas fa-user"></i>Inicio de sesión</a></p></div>
+            <!-- Botón menú nav desplegable -->
+            <div id="caja-btn">
+                <div class="btn" id="btn1"><i class="fas fa-bars"></i></div>
+                <h1 class="main-title">Rekord AutoAk</h1>`
+            </div>
+            
+            <!-- Menú navegación -->
+            <nav id="menu-nav" class="ocultar">
+                <ul>
+                    <li><a href="Index.html">Inicio<i class="fas fa-angle-double-right"></i></a></li>
+                        <li><a href="Noticias.html">Noticias<i class="fas fa-angle-double-right"></i></a></li>
+                        <li><a href="#">Servicios<i class="fas fa-angle-double-right"></i></a>
+                            <ul class="submenu" class="activo">
+                                <li><a href="SvcNeumaticos.html">Neumaticos</a></li>
+                                <li><a href="SvcChapaPintura.html">Chapa y pintura</a></li>
+                                <li><a href="SvcLimpieza.html">Limpieza de Vehiculos</a></li>
+                                <li><a href="SvcCambioAceite.html">Cambio de Aceite</a></li>
+                                <li><a href="SvcRepros.html">Repros</a></li>
+                                <li><a href="SvcRecambios.html">Recambios</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Nosotros.html">Nosotros<i class="fas fa-angle-double-right"></i></a></li>
+                        <li><a class="pag-activa" href="Contacto.html">Contacto<i class="fas fa-angle-double-right"></i></a></li>
+                </ul> 
+            </nav>
+        </header>
+            <section>
+                <div class="contenedor__todo">
+                   
+                    
+               
+                    <!--Register-->
+                    <form action="" class="formulario" id="formulario">
+                        <!-- Grupo: Usuario -->
+                        <div class="formulario__grupo" id="grupo__usuario">
+                            <label for="usuario" class="formulario__label">Usuario</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Usuario">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                        </div>
+            
+                        <!-- Grupo: Nombre -->
+                        <div class="formulario__grupo" id="grupo__nombre">
+                            <label for="nombre" class="formulario__label">Nombre</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                        </div>
+            
+                        <!-- Grupo: Contraseña -->
+                        <div class="formulario__grupo" id="grupo__password">
+                            <label for="password" class="formulario__label">Contraseña</label>
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="formulario__input" name="password" id="password">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                        </div>
+            
+                        <!-- Grupo: Contraseña 2 -->
+                        <div class="formulario__grupo" id="grupo__password2">
+                            <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="formulario__input" name="password2" id="password2">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                        </div>
+            
+                        <!-- Grupo: Correo Electronico -->
+                        <div class="formulario__grupo" id="grupo__correo">
+                            <label for="correo" class="formulario__label">Correo Electrónico</label>
+                            <div class="formulario__grupo-input">
+                                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@gmail.com">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                        </div>
+            
+                        <!-- Grupo: Teléfono -->
+                        <div class="formulario__grupo" id="grupo__telefono">
+                            <label for="telefono" class="formulario__label">Teléfono</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="612345678">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                        </div>
+            
+                        <!-- Grupo: Terminos y Condiciones -->
+                        <div class="formulario__grupo" id="grupo__terminos">
+                            <label class="formulario__label">
+                                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                                Acepto los Terminos y Condiciones
+                            </label>
+                        </div>
+            
+                        <div class="formulario__mensaje" id="formulario__mensaje">
+                            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el registro correctamente. </p>
+                        </div>
+            
+                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                            <button type="submit" class="formulario__btn">Enviar</button>
+                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"> Registro ejecutado exitosamente!</p>
+                        </div>
+                    </form>
+                     </div>
+                </div>
+            </section>
+            <!--Javascript-->
+            <script src="js/formulario.js"></script>
+            <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    
+            <footer id="pie-pagina">
+                <ul class="menu-pie-formularios">
+                    <!--Enlace Form Contacto-->
+                    <li><i class="fas fa-users"></i><a href="Contacto.html">Contacta con nosotros</a></li>
+                   
+                </ul>    
+                <ul class="menu-pie-contacto">
+                    <!--Enlace al mapa-->
+                    <li class="mapa"><a href="https://www.google.es/maps/place/CIFP+Txurdinaga+LHII/@43.2577221,-2.9049658,17z/data=!4m12!1m6!3m5!1s0xd4e4fac87437727:0x364f27e82def0130!2sCIFP+Txurdinaga+LHII!8m2!3d43.2577221!4d-2.9027771!3m4!1s0xd4e4fac87437727:0x364f27e82def0130!8m2!3d43.2577221!4d-2.9027771" target="blank"><i class="fas fa-map-marked-alt"></i></a></li>
+                    <!--Enlace al telefono de contacto-->
+                    <li class="telefono"><a href="tel:68859665" target="blank"><i class="fas fa-phone-alt"></i></a></li>
+                    <!--Enlace al correo electronico-->
+                    <li class="mail"><a href="mailto:rekordautoak2021@gmail.com" target="blank"><i class="fas fa-envelope"></i></a></li>
+                    <!--Enlace a nuestra cuenta de instagram-->
+                    <li class="instagram"></i><a href="https://www.instagram.com/rekordautoak_rka/" target="blank"><i class="fab fa-instagram"></i></a></li>  
+                </ul>  
+                <p class="copyright">© Copyright 2022 Rekord AutoAk. Todos los derechos reservados</p>                 
+            </footer> 
+            
+	
+    </body>
+</html>
